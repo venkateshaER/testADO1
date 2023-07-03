@@ -1,0 +1,29 @@
+{
+  "name": "@amzn/test-java-app-cdk",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": {
+    "node": ">=18",
+    "npm": ">=8"
+  },
+  "main": "dist/lib/app.js",
+  "scripts": {
+    "clean": "rm -rf dist && rm -rf cdk.out",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prepare": "npm run-script build",
+    "test": "echo OK"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@amzn/pipelines": "^4.0.8",
+    
+    "@types/node": "^18.15.11",
+    "@tsconfig/node18": "^1.0.0",
+    "aws-cdk-lib": "^2.17.0",
+    "constructs": "^10.0.97",
+    "typescript": "~5.0.4"
+  }
+}
